@@ -1,0 +1,51 @@
+<app-header></app-header>
+<div class="hr"></div>
+<div class="wrapper">
+<div class="container first mt-2">
+    <div class="row  gx-5" >
+        <div class="col-lg-4" > 
+        <a [routerLink]="['/',studioComponent.path,'details']" ><div  class="card interior text-center text-uppercase sttext d-flex justify-content-center align-items-center  flex-fill text-light rounded-0">
+            {{studioComponent.text}}
+        </div></a>
+    </div>
+    <div  class="col"  >
+        
+    <div #carouselElement   class="cycle-slideshow cycle-autoinit h-100" 
+            data-cycle-fx="carousel"
+            data-cycle-timeout="1"
+            data-cycle-speed="5000"
+            data-cycle-carousel-fluid="true"
+            data-cycle-carousel-visible="2"
+            data-cycle-easing="linear"
+            data-cycle-reverse="true">
+            <!-- <span class="imageswe" *ngFor="let image of studioComponent.images"><img  class="mx-2  d-block h-100" src="{{image}}" /></span> -->
+            
+    
+       
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="container second mt-3">
+
+<div class="row">
+    <div #longCarouselElement  class="cycle-slideshow cycle-autoinit h-100" 
+data-cycle-fx="carousel"
+data-cycle-timeout="1"
+data-cycle-speed="5000"
+data-cycle-carousel-visible="3"
+data-cycle-carousel-fluid="true"
+data-cycle-easing="linear"
+>
+<!-- <img class="mx-2" src="https://malsup.github.io/images/beach1.jpg">
+<img class="mx-2" src="https://malsup.github.io/images/beach2.jpg">
+
+<img class="mx-2" src="https://malsup.github.io/images/beach9.jpg"> -->
+
+<!-- <span class="imageswe" *ngFor="let image of studioComponent.longCarousel"><img  class="mx-2  d-block h-100" src="{{image}}" /></span> -->
+            
+</div>
+</div>
+</div>
+</div>

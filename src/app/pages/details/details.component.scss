@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../../../assets/texts/Roboto-Medium.ttf");
+}
+
+
+.hr{
+    width: 100%;
+    border-top: 2px solid;
+}
+
+.detailimgs {
+    width: 70%;
+
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    object-fit: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cycle-overlay { display:flex; justify-content: space-between;font-family: tahoma, arial; position: absolute; bottom:0; align-items: center;width: 100%; z-index: 600; font-size:20px; font-weight:bold; text-transform: capitalize; text-align:center;background: rgba(0,0,0,.5) ; color: white; padding: 15px; opacity: .5; }
+
+
+//.details-wrapper {
+    // padding-top:1.5%;
+    // margin-top:2em;
+    // height:50vh;
+//}
+
+.detailsInfo {
+    width:30%;
+    // padding: 2% 5% 3% 5%;
+    word-wrap: break-word;
+    font-size: 16px;
+    font-family: "roboto-medium";
+    color:#222;
+    font-weight: 400;
+
+}
+
+@media screen and (max-width:997px){
+    .details-wrapper {
+        flex-direction: column;
+    }
+    .detailimgs {
+        width: 100%;
+        
+    }
+    .detailsInfo {
+        width:100%;
+    }
+}

@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="hr"></div>
+<div class=" home container-fluid d-flex mt-5">
+    <div class="container-fluid  shelves w-50">
+        <div class="row g-4">
+            <div class="col-lg-6 " *ngFor="let card of cards">
+                <div class="borde-color"> 
+                <div class="card animate__animated p-2 shadow-lg border d-flex justify-content-center align-items-center rounded-0"  (mouseenter)="hover(card.image)" (mouseleave)="onMouseLeave()">
+                    <img #cardImg src="{{card.image}}"/>
+                    <div class="card-body">
+                     <a class="card-text  text-center text-capitalize" [routerLink]="['/',card.path]">{{card.text}}</a>
+                     <a class="card-text  text-center text-capitalize" routerLink="about">{{card.about}}</a>
+                     <a class="card-text  text-center text-capitalize" routerLink="about">{{card.contact}}</a>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" picture border-0 d-flex">
+        <img src="../../../assets/images/pexels-nitin-khajotia-1516680.jpg" width="50" class="flex-fill " alt="" #picer>
+    </div>
+</div>
+

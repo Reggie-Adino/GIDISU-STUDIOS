@@ -1,0 +1,20 @@
+<mat-toolbar >
+    <mat-toolbar-row>
+      <span><img  width="120px" src="../../../assets/images/GGIDISU llogo.png" alt=""></span>
+      <span class="example-spacer"></span>
+
+  <div class="menu-btn" >
+      <button  mat-icon-button  class="example-icon " aria-label="Example icon-button with menu icon">
+        <mat-icon class="menu-button" (click)="displaymenu()">{{menuicon}}</mat-icon>
+        </button>
+  </div>
+
+
+  <ul class="menu-items "  [ngClass]=" showMenu ? 'animate__animated animate__fadeInRight':'animate__animated animate__fadeOutRightBig'"  >
+            <li  class="animate__animated mb-4" *ngFor="let text of menu ">
+                <a class= "text-capitalize text-start" >{{text.text}}</a>
+            </li>
+        </ul>
+
+</mat-toolbar-row> 
+

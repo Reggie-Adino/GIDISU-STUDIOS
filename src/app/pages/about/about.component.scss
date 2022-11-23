@@ -1,0 +1,121 @@
+@font-face {
+    font-family: roboto-medium;
+    src: url(../../../assets/texts/Roboto-Medium.ttf);
+}
+
+.hr{
+    width: 100%;
+    border-top: 2px solid;
+}
+
+.wrapper{
+ width: 100%;
+ height: 90%;
+//  background:blue;
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: underline;
+    color: #49D49D;
+}
+
+.about{
+    // height:70%;
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap:20px;
+    // grid-template-areas: 'avatar avatar' 'info info';
+}
+
+.avatar {
+    // vertical-align: middle;
+    // width: 50px;
+    // height: 50px;
+    // border-radius: none;
+    // background-color:yellow;
+    // grid-area: avatar;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  }
+
+.avatar img {
+    display:block;
+    width:100%;
+    object-fit: stretch;
+}
+
+h4 {
+    text-align:center;
+}
+
+.about-info{
+//  grid-area:info;
+//  background:yellow;
+}
+
+.contact{
+    height:30%;
+    // background:red;
+}
+
+.hrt {
+    width: 100%;
+    border-top: 2px solid #ddd;
+
+}
+
+.contact-adress-media {
+    display:flex;
+    justify-content:space-around;
+}
+
+/*Media query*/
+
+@media screen and (max-width:480px){
+
+    .avatar {
+        width: 250px;
+        height: 250px;
+        margin: auto;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight:bold;
+        margin: 2rem 0;
+    }
+    p {
+        margin-top:2.5rem;
+        font-size: 1.5rem;
+        font-weight:500;
+        letter-spacing:.1rem;
+        word-wrap:wrap;
+        word-spacing: 1rem;
+        line-height:2rem;
+        font-family: roboto-medium;
+    }
+    .about { 
+        grid-template-columns: 1fr ;
+    }
+    h2{
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: #49D49D;
+    }
+    .contact{
+        margin:2rem auto 0 auto;
+    }
+    .social-media-handles {
+        margin:2rem auto 0 auto;
+    }
+
+    .contact-adress-media {
+        display:grid;
+
+    }
+}
